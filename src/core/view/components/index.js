@@ -5,7 +5,7 @@ import animation from 'uni-mixins/animation'
 
 const requireComponents = [
   // baseComponents
-  require.context('./', true, /index\.vue$/),
+  require.context('./', true, /(?<!audio|canvas|checkbox|checkbox-group|editor|form|movable-area|movable-view|picker-view|picker-view-column|progress|radio|radio-group|switch)\/index\.vue$/),
   require.context('../../../platforms/' + __PLATFORM__ + '/view/components', true, /index\.vue$/)
 ]
 
